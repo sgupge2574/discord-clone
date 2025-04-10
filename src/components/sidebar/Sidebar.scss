@@ -17,7 +17,7 @@
             height: 45px;
             background-color: #33363d;
             border-radius: 15px;
-            border: #898996 1px solid;
+            border: #515153 1px solid;
             cursor: pointer;
             &:hover{
                 background-color: #0f44c7;
@@ -31,7 +31,15 @@
         }
     }
     .sidebarRight {
+        width: 300px;
         background-color: #2b2d33;
+        .sidebarTop {
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
     }
 
     
