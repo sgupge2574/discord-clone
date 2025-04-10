@@ -32,15 +32,45 @@
     }
     .sidebarRight {
         width: 300px;
-        background-color: #2b2d33;
+        background-color: #2C2D34;
         .sidebarTop {
             color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 20px;
+            cursor: pointer;
+        }
+
+        .sidebarChannels {
+            padding:13px;
+            color: #ffffff;
+
+            .sidebarChannelsHedder {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0px;
+                font-size: 14px;
+                font-weight: 600;
+
+                .sidebarAddIcon {
+                    cursor: pointer;
+                }
+
+                .sidebarHedder {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 5px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #0f44c7;
+                        border-radius: 5px;
+                    }
+                }
+            }
         }
     }
-
     
 }
