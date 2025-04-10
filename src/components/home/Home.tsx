@@ -3,7 +3,7 @@ import './Home.scss'
 
 const Home = () => {
   return (
-    <div></div>
+    <h1></h1>
   )
 }
 

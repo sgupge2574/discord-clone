@@ -2,28 +2,37 @@
     display: flex;
     flex: 35%;
     height: 100vh;
-    background-color: gray;
+    background-color: #33363d; //あとでhomeに移動する
 
     .sidebarLeft {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top:15px;
-        background-color: black;
-        padding: 7px 15px
-    }
+        background-color: #111113;
+        padding: 15px 7px;
+        border-right: #0f44c7 1px solid;
 
-    .serverIcon{
-        img{
-            width: 55px;
-            height: 55px;
-            background-color: gray;
-            border-radius: 9999px;
-            margin-bottom: 10px;
+        .serverIcon{
+            width: 45px;
+            height: 45px;
+            background-color: #33363d;
+            border-radius: 15px;
+            border: #898996 1px solid;
             cursor: pointer;
             &:hover{
-                background-color: #2f3136;
+                background-color: #0f44c7;
+            }
+            margin-top: 12px;
+            img{
+                width: 45px;
+                height: 45px;
+                border-radius: 9px;         
             }
         }
     }
+    .sidebarRight {
+        background-color: #2b2d33;
+    }
+
+    
 }
