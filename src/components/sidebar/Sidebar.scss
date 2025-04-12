@@ -33,6 +33,7 @@
     .sidebarRight {
         width: 300px;
         background-color: #2C2D34;
+        position: relative;
         .sidebarTop {
             color: #ffffff;
             display: flex;
@@ -56,6 +57,7 @@
 
                 .sidebarAddIcon {
                     cursor: pointer;
+
                 }
 
                 .sidebarHedder {
@@ -65,10 +67,50 @@
                     margin-top: 5px;
                     cursor: pointer;
                     &:hover{
-                        background-color: #0f44c7;
+                        color: gray;
+                        background-color: #32363C;
                         border-radius: 5px;
                     }
                 }
+            }
+        }
+        .sidebarFooter {
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 95%;
+            padding-bottom: 10px;
+            border-top: #686a6e 1px solid;
+            padding-top: 10px;
+            margin-left: 3px;
+            .sidebarAccount {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+                h4 {
+                    color: #ffffff;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                span{
+                    color: #8b8585;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+
+            .sidebarVoice {
+                display: flex;
+                align-items: center;
+                color: #8b8585;
             }
         }
     }
