@@ -1,8 +1,8 @@
 .sidebar{
     display: flex;
-    flex: 35%;
+    flex: 20%; // flexの修正
     height: 100vh;
-    background-color: #33363d; //あとでhomeに移動する
+    // background-color: #33363d; //あとでhomeに移動する
 
     .sidebarLeft {
         display: flex;
@@ -33,6 +33,7 @@
     .sidebarRight {
         width: 300px;
         background-color: #2C2D34;
+        flex-grow: 1;
         position: relative;
         .sidebarTop {
             color: #ffffff;
