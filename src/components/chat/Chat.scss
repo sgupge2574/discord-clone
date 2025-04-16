@@ -5,3 +5,8 @@
     background-color: #33363d;
     color: #ffffff;
 }
+.chatMessage {
+    flex-grow: 1;
+    
+    overflow-y: auto;
+}

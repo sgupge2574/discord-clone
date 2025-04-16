@@ -10,7 +10,6 @@
         align-items: center;
         background-color: #111113;
         padding: 15px 7px;
-        border-right: #0f44c7 1px solid;
 
         .serverIcon{
             width: 45px;
@@ -23,6 +22,7 @@
                 background-color: #0f44c7;
             }
             margin-top: 12px;
+            margin-bottom: 10px;
             img{
                 width: 45px;
                 height: 45px;
@@ -100,11 +100,13 @@
                     color: #ffffff;
                     font-size: 14px;
                     font-weight: 500;
+                    margin-left: 10px;
                 }
                 span{
                     color: #8b8585;
                     font-size: 12px;
                     font-weight: 400;
+                    margin-left: 10px;
                 }
             }
 

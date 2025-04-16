@@ -1,15 +1,15 @@
-import React from 'react'
-import './SidebarChannel.scss'
+import React from "react";
+import "./SidebarChannel.scss";
 
 const SidebarChannel = () => {
   return (
-    <div className='SidebarChannel'>
-        <h4>
-            <span className='sidebarChannelHash'>#</span>
-            Udemy
-        </h4>
+    <div className="SidebarChannel">
+      <h4>
+        <span className="sidebarChannelHash">#</span>
+        Channel Name
+      </h4>
     </div>
-  )
-}
+  );
+};
 
-export default SidebarChannel
+export default SidebarChannel;
