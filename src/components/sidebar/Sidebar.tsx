@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import React from "react";
 import SidebarChannel from "./SidebarChannel";
 import "./Sidebar.scss";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -7,10 +7,20 @@ import MicIcon from "@mui/icons-material/Mic";
 import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
 import SettingsIcon from "@mui/icons-material/Settings";
 import { auth } from "../../firebase";
-import { useAppSelector } from "../../app/hooks";
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
+import { logout } from "../../features/userSlice";
 
 const Sidebar = () => {
   const user = useAppSelector((state) => state.user);
+
+  const dispatch = useAppDispatch();
+  const handleLogout = () => {
+    if (user?.uid.startsWith("guest-")) {
+      dispatch(logout());
+    } else {
+      auth.signOut();
+    }
+  };
 
   return (
     <div className="sidebar">
@@ -47,7 +57,7 @@ const Sidebar = () => {
         </div>
         <div className="sidebarFooter">
           <div className="sidebarAccount">
-            <img src={user?.photo} alt="" onClick={() => auth.signOut()} />
+            <img src={user?.photo} alt="" onClick={handleLogout} />
             <div className="accountName">
               <h4>{user?.displayName}</h4>
               <span>#{user?.uid.substring(0, 4)}</span>
