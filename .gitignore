@@ -25,3 +25,4 @@ yarn-error.log*
 // firebase フォルダの中全てを指定したい場合は以下
 firebase/
 src/firebase.ts
+.firebase
